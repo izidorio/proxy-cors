@@ -57,7 +57,7 @@ const api = axios.create({
 
 async function getUser() {
   try {
-    const response = await api.get('/user?ID=12345');
+    const response = await api.get('https://google.com');
     console.log(response);
   } catch (error) {
     console.error(error);
