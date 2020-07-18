@@ -5,7 +5,7 @@
 
 ### Atualize a lista de repositórios 
 ```
-apt-get update && apt-get upgrade
+sudo apt-get update && sudo apt-get upgrade
 ```
 
 ### Instale Node e o NPM utilize a última versão LTS. 
@@ -27,7 +27,7 @@ nano .env
 # Listen on a specific host via the HOST environment variable
 HOST=0.0.0.0
 # Listen on a specific port via the PORT environment variable
-PORT=3333
+PORT=8080
 
 ```
 ### Instale o PM2 para monitorar a execução da aplicação
