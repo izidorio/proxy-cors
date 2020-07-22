@@ -41,9 +41,11 @@ cd ~/proxy-cors
 pm2 start server.js --name proxy-cors
 ```
 
-### Garanta que ao reiniciar o servidor a aplicação seja startada
+### Garanta que ao reiniciar o servidor a aplicação seja startada exemplo em uma EC2 da AWS
 ```
-pm2 startup
+pm2 startup ubuntu -u ubuntu
+# deve ter uma saída parecida com a instrução abaixo. Execute a intrução no terminal
+sudo env PATH=$PATH:/usr/bin pm2 startup ubuntu -u ubuntu --hp /home/ubuntu
 
 pm2 save
 ```
